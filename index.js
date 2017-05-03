@@ -1,6 +1,6 @@
 const aspectRatios = require('./src/aspect-ratios.js')
-const backgroundPositions = require('./src/background-positions.js')
-const backgroundSize = require('./src/backgroun-size.js')
+const backgroundPosition = require('./src/background-position.js')
+const backgroundSize = require('./src/background-size.js')
 const borderRadius = require('./src/border-radius.js')
 const borders = require('./src/borders.js')
 const boxShadow = require('./src/box-shadow.js')
@@ -12,7 +12,7 @@ const display = require('./src/display.js')
 const flexbox = require('./src/flexbox.js')
 const floats = require('./src/floats.js')
 const fontFamily = require('./src/font-family.js')
-const fontStyle = require('./src/font-size.js')
+const fontStyle = require('./src/font-style.js')
 const fontWeight = require('./src/font-weight.js')
 const forms = require('./src/forms.js')
 const heights = require('./src/heights.js')
@@ -44,7 +44,7 @@ const zIndex = require('./src/z-index.js')
 
 module.exports = Object.assign(
   aspectRatios,
-  backgroundPositions,
+  backgroundPosition,
   backgroundSize,
   borderRadius,
   borders,

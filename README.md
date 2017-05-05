@@ -1,4 +1,4 @@
-# tachyons-js
+# tachyons-for-js
 Tachyons for CSS-in-JS
 
 # TODO

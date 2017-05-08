@@ -17,4 +17,9 @@ const styles = () => ({
 - [ ] Add missing tachyons modules
 - [ ] Add documentation
 - [ ] Add examples for different CSS-in-JS solutions
+  - [ ] fela.js
+  - [ ] csx
+  - [ ] styled-components
+  - [ ] css modules
+  
 - [ ] Add the ability to import individual modules only

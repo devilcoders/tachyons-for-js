@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "git@github.com:devilcoders/tachyons-for-js.git",
   "author": "Alexey Topolyanskiy <devilcoders@protonmail.ch>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "tachyons",
+    "css-in-js",
+    "atomic css",
+    "functional css",
+    "design",
+    "responsive",
+    "performance"
+  ],
 }

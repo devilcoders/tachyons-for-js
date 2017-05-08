@@ -15,7 +15,23 @@ const styles = () => ({
 
 # TODO
 - [ ] Add missing tachyons modules
+  - [ ] border-colors.css
+  - [ ] border-style.css
+  - [ ] border-widths.css
+  - [ ] colors.css
+  - [ ] debug-children.css
+  - [ ] debug-grid.css
+  - [ ] debug.css
+  - [ ] hovers.css
+  - [ ] images.css
+  - [ ] media-queries.css
+  - [ ] module-template.css
+  - [ ] nested.css
+  - [ ] skins-pseudo.css
+  - [ ] skins.css
+
 - [ ] Add documentation
+
 - [ ] Add examples for different CSS-in-JS solutions
   - [ ] fela.js
   - [ ] csx

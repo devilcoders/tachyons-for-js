@@ -1,6 +1,7 @@
 const aspectRatios = require('./src/aspect-ratios.js')
 const backgroundPosition = require('./src/background-position.js')
 const backgroundSize = require('./src/background-size.js')
+const borderColors = require('./src/border-colors.js')
 const borderRadius = require('./src/border-radius.js')
 const borders = require('./src/borders.js')
 const boxShadow = require('./src/box-shadow.js')
@@ -46,6 +47,7 @@ module.exports = Object.assign(
   aspectRatios,
   backgroundPosition,
   backgroundSize,
+  borderColors,
   borderRadius,
   borders,
   boxShadow,

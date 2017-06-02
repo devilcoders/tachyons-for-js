@@ -1,7 +1,8 @@
 # tachyons-for-js
+
 Tachyons for CSS-in-JS
 
-# Quick Example
+## Quick Example
 
 ```js
 import tc from 'tachyons-for-js'
@@ -13,7 +14,8 @@ const styles = () => ({
 })
 ```
 
-# TODO
+## TODO
+
 - [ ] Add missing tachyons modules
   - [x] border-colors.css
   - [ ] border-style.css
@@ -37,5 +39,5 @@ const styles = () => ({
   - [ ] csx
   - [ ] styled-components
   - [ ] css modules
-  
+
 - [ ] Add the ability to import individual modules only

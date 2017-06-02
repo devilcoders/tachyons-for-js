@@ -2,108 +2,108 @@ const v = require('./variables')
 
 module.exports = {
   na1: {
-    margin: v.spacingExtraSmall
+    margin: `-${v.spacingExtraSmall}`
   },
   na2: {
-    margin: v.spacingSmall
+    margin: `-${v.spacingSmall}`
   },
   na3: {
-    margin: v.spacingMedium
+    margin: `-${v.spacingMedium}`
   },
   na4: {
-    margin: v.spacingLarge
+    margin: `-${v.spacingLarge}`
   },
   na5: {
-    margin: v.spacingExtraLarge
+    margin: `-${v.spacingExtraLarge}`
   },
   na6: {
-    margin: v.spacingExtraExtraLarge
+    margin: `-${v.spacingExtraExtraLarge}`
   },
   na7: {
-    margin: v.spacingExtraExtraExtraLarge
+    margin: `-${v.spacingExtraExtraExtraLarge}`
   },
   nl1: {
-    marginLeft: v.spacingExtraSmall
+    marginLeft: `-${v.spacingExtraSmall}`
   },
   nl2: {
-    marginLeft: v.spacingSmall
+    marginLeft: `-${v.spacingSmall}`
   },
   nl3: {
-    marginLeft: v.spacingMedium
+    marginLeft: `-${v.spacingMedium}`
   },
   nl4: {
-    marginLeft: v.spacingLarge
+    marginLeft: `-${v.spacingLarge}`
   },
   nl5: {
-    marginLeft: v.spacingExtraLarge
+    marginLeft: `-${v.spacingExtraLarge}`
   },
   nl6: {
-    marginLeft: v.spacingExtraExtraLarge
+    marginLeft: `-${v.spacingExtraExtraLarge}`
   },
   nl7: {
-    marginLeft: v.spacingExtraExtraExtraLarge
+    marginLeft: `-${v.spacingExtraExtraExtraLarge}`
   },
   nr1: {
-    marginRight: v.spacingExtraSmall
+    marginRight: `-${v.spacingExtraSmall}`
   },
   nr2: {
-    marginRight: v.spacingSmall
+    marginRight: `-${v.spacingSmall}`
   },
   nr3: {
-    marginRight: v.spacingMedium
+    marginRight: `-${v.spacingMedium}`
   },
   nr4: {
-    marginRight: v.spacingLarge
+    marginRight: `-${v.spacingLarge}`
   },
   nr5: {
-    marginRight: v.spacingExtraLarge
+    marginRight: `-${v.spacingExtraLarge}`
   },
   nr6: {
-    marginRight: v.spacingExtraExtraLarge
+    marginRight: `-${v.spacingExtraExtraLarge}`
   },
   nr7: {
-    marginRight: v.spacingExtraExtraExtraLarge
+    marginRight: `-${v.spacingExtraExtraExtraLarge}`
   },
   nb1: {
-    marginBottom: v.spacingExtraSmall
+    marginBottom: `-${v.spacingExtraSmall}`
   },
   nb2: {
-    marginBottom: v.spacingSmall
+    marginBottom: `-${v.spacingSmall}`
   },
   nb3: {
-    marginBottom: v.spacingMedium
+    marginBottom: `-${v.spacingMedium}`
   },
   nb4: {
-    marginBottom: v.spacingLarge
+    marginBottom: `-${v.spacingLarge}`
   },
   nb5: {
-    marginBottom: v.spacingExtraLarge
+    marginBottom: `-${v.spacingExtraLarge}`
   },
   nb6: {
-    marginBottom: v.spacingExtraExtraLarge
+    marginBottom: `-${v.spacingExtraExtraLarge}`
   },
   nb7: {
-    marginBottom: v.spacingExtraExtraExtraLarge
+    marginBottom: `-${v.spacingExtraExtraExtraLarge}`
   },
   nt1: {
-    marginTop: v.spacingExtraSmall
+    marginTop: `-${v.spacingExtraSmall}`
   },
   nt2: {
-    marginTop: v.spacingSmall
+    marginTop: `-${v.spacingSmall}`
   },
   nt3: {
-    marginTop: v.spacingMedium
+    marginTop: `-${v.spacingMedium}`
   },
   nt4: {
-    marginTop: v.spacingLarge
+    marginTop: `-${v.spacingLarge}`
   },
   nt5: {
-    marginTop: v.spacingExtraLarge
+    marginTop: `-${v.spacingExtraLarge}`
   },
   nt6: {
-    marginTop: v.spacingExtraExtraLarge
+    marginTop: `-${v.spacingExtraExtraLarge}`
   },
   nt7: {
-    marginTop: v.spacingExtraExtraExtraLarge
+    marginTop: `-${v.spacingExtraExtraExtraLarge}`
   }
 }

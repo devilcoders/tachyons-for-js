@@ -19,7 +19,7 @@ const styles = () => ({
 - [ ] Add missing tachyons modules
   - [x] border-colors.css
   - [x] border-style.css
-  - [ ] border-widths.css
+  - [x] border-widths.css
   - [ ] debug-children.css
   - [ ] debug-grid.css
   - [ ] debug.css

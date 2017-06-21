@@ -4,6 +4,7 @@ const backgroundSize = require('./src/background-size.js')
 const borderColors = require('./src/border-colors.js')
 const borderRadius = require('./src/border-radius.js')
 const borderStyle = require('./src/border-style.js')
+const borderWidths = require('./src/border-widths.js')
 const borders = require('./src/borders.js')
 const boxShadow = require('./src/box-shadow.js')
 const boxSizing = require('./src/box-sizing.js')
@@ -51,6 +52,7 @@ module.exports = Object.assign(
   borderColors,
   borderRadius,
   borderStyle,
+  borderWidths,
   borders,
   boxShadow,
   boxSizing,

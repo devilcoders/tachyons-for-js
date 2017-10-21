@@ -1,6 +1,6 @@
 {
   "name": "tachyons-for-js",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Tachyons for CSS-in-JS",
   "main": "index.js",
   "repository": "git@github.com:devilcoders/tachyons-for-js.git",
@@ -15,5 +15,8 @@
     "design",
     "responsive",
     "performance"
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
 }

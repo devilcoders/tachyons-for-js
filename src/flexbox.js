@@ -13,9 +13,10 @@ module.exports = {
   flex_column: { flexDirection: 'column' },
   flex_row: { flexDirection: 'row' },
   flex_wrap: { flexWrap: 'wrap' },
+  flex_nowrap: { flexWrap: 'nowrap' },
+  flex_wrap_reverse: { flexWrap: 'wrap-reverse' },
   flex_column_reverse: { flexDirection: 'column-reverse' },
   flex_row_reverse: { flexDirection: 'row-reverse' },
-  flex_wrap_reverse: { flexWrap: 'wrap-reverse' },
 
   items_start: { alignItems: 'flex-start' },
   items_end: { alignItems: 'flex-end' },

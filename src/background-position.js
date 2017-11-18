@@ -1,7 +1,7 @@
 module.exports = {
   bg_center: {
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center '
+    backgroundPosition: 'center center'
   },
 
   bg_top: {

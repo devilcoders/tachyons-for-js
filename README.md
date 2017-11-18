@@ -1,6 +1,6 @@
-# tachyons-for-js
+# Tachyons-For-JS
 
-Tachyons for CSS-in-JS
+Tachyons for various CSS-in-JS solutions.
 
 ## Quick Example
 
@@ -23,11 +23,8 @@ const styles = () => ({
   - [ ] debug-children.css
   - [ ] debug-grid.css
   - [ ] debug.css
-  - [ ] hovers.css
-  - [ ] images.css
-  - [ ] nested.css
-  - [ ] skins-pseudo.css
-  - [ ] skins.css
+  - [x] hovers.css
+  - [x] skins.css
 
 - [ ] Add documentation
 
@@ -36,5 +33,8 @@ const styles = () => ({
   - [ ] csx
   - [ ] styled-components
   - [ ] css modules
+  - [ ] styled-jsx
+  - [ ] glamourous
 
 - [ ] Add the ability to import individual modules only
+- [ ] Add utils module to provide various helpers (chain classes, for example)

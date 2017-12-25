@@ -1,6 +1,6 @@
 {
   "name": "tachyons-for-js",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Tachyons for CSS-in-JS",
   "main": "index.js",
   "repository": "git@github.com:devilcoders/tachyons-for-js.git",
@@ -15,5 +15,12 @@
     "design",
     "responsive",
     "performance"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }

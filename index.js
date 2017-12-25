@@ -32,6 +32,7 @@ const overflow = require('./src/overflow')
 const position = require('./src/position')
 const rotation = require('./src/rotation')
 const spacing = require('./src/spacing')
+const skins = require('./src/skins')
 const tables = require('./src/tables')
 const textAlign = require('./src/text-align')
 const textDecorators = require('./src/text-decorators')
@@ -81,6 +82,7 @@ module.exports = Object.assign(
   position,
   rotation,
   spacing,
+  skins,
   tables,
   textAlign,
   textDecorators,

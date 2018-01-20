@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   tracked: {
     letterSpacing: '.1em'
   },

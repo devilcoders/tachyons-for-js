@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   mw_100: {
     maxWidth: '100%'
   },

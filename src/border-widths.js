@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   bw0: { borderWidth: 0 },
   bw1: { borderWidth: '.125rem' },
   bw2: { borderWidth: '.25rem' },

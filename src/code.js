@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   pre: {
     overflowX: 'auto',
     overflowY: 'hidden',

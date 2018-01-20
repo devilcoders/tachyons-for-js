@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   top_0: { top: 0 },
   right_0: { right: 0 },
   bottom_0: { bottom: 0 },

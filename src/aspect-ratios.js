@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   aspect_ratio: {
     height: 0,
     position: 'absolute'

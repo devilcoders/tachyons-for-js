@@ -1,6 +1,6 @@
-const v = require('./variables')
+import v from './variables'
 
-module.exports = {
+export default {
   black_90: { color: v.black_90 },
   black_80: { color: v.black_80 },
   black_70: { color: v.black_70 },

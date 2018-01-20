@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   clip: {
     position: 'fixed !important',
     _position: 'absolute !important',

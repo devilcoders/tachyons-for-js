@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   link: {
     textDecoration: 'none',
     transition: 'color .15s ease-in',

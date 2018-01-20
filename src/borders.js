@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   ba: { borderStyle: 'solid', borderWidth: '1px' },
   bt: { borderTopStyle: 'solid', borderTopWidth: '1px' },
   br: { borderRightStyle: 'solid', borderRightWidth: '1px' },

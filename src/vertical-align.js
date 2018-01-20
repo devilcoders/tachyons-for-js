@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   v_base: {
     verticalAlign: 'baseline'
   },

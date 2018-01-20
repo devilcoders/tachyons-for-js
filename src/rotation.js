@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rotate_45: {
     transform: 'rotate(45deg)'
   },

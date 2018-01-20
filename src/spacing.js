@@ -1,6 +1,6 @@
-const v = require('./variables')
+import v from './variables'
 
-module.exports = {
+export default {
   pa0: {
     padding: v.spacingNone
   },

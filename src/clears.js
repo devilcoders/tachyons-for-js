@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   cf: {
     ':before': {
       content: '',

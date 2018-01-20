@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   bg_center: {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center'

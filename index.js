@@ -1,53 +1,53 @@
-const aspectRatios = require('./src/aspect-ratios')
-const backgroundPosition = require('./src/background-position')
-const backgroundSize = require('./src/background-size')
-const borderColors = require('./src/border-colors')
-const borderRadius = require('./src/border-radius')
-const borderStyle = require('./src/border-style')
-const borderWidths = require('./src/border-widths')
-const borders = require('./src/borders')
-const boxShadow = require('./src/box-shadow')
-const boxSizing = require('./src/box-sizing')
-const clears = require('./src/clears')
-const code = require('./src/code')
-const coordinates = require('./src/coordinates')
-const display = require('./src/display')
-const flexbox = require('./src/flexbox')
-const floats = require('./src/floats')
-const fontFamily = require('./src/font-family')
-const fontStyle = require('./src/font-style')
-const fontWeight = require('./src/font-weight')
-const forms = require('./src/forms')
-const heights = require('./src/heights')
-const hovers = require('./src/hovers')
-const letterSpacing = require('./src/letter-spacing')
-const lineHeight = require('./src/line-height')
-const links = require('./src/links')
-const lists = require('./src/lists')
-const maxWidths = require('./src/max-widths')
-const negativeMargins = require('./src/negative-margins')
-const opacity = require('./src/opacity')
-const outlines = require('./src/outlines')
-const overflow = require('./src/overflow')
-const position = require('./src/position')
-const rotation = require('./src/rotation')
-const spacing = require('./src/spacing')
-const skins = require('./src/skins')
-const tables = require('./src/tables')
-const textAlign = require('./src/text-align')
-const textDecorators = require('./src/text-decorators')
-const textTransform = require('./src/text-transform')
-const typeScale = require('./src/type-scale')
-const typography = require('./src/typography')
-const utilites = require('./src/utilites')
-const verticalAlign = require('./src/vertical-align')
-const visibility = require('./src/visibility')
-const whiteSpace = require('./src/white-space')
-const widths = require('./src/widths')
-const wordBreak = require('./src/word-break')
-const zIndex = require('./src/z-index')
+import aspectRatios from './src/aspect-ratios'
+import backgroundPosition from './src/background-position'
+import backgroundSize from './src/background-size'
+import borderColors from './src/border-colors'
+import borderRadius from './src/border-radius'
+import borderStyle from './src/border-style'
+import borderWidths from './src/border-widths'
+import borders from './src/borders'
+import boxShadow from './src/box-shadow'
+import boxSizing from './src/box-sizing'
+import clears from './src/clears'
+import code from './src/code'
+import coordinates from './src/coordinates'
+import display from './src/display'
+import flexbox from './src/flexbox'
+import floats from './src/floats'
+import fontFamily from './src/font-family'
+import fontStyle from './src/font-style'
+import fontWeight from './src/font-weight'
+import forms from './src/forms'
+import heights from './src/heights'
+import hovers from './src/hovers'
+import letterSpacing from './src/letter-spacing'
+import lineHeight from './src/line-height'
+import links from './src/links'
+import lists from './src/lists'
+import maxWidths from './src/max-widths'
+import negativeMargins from './src/negative-margins'
+import opacity from './src/opacity'
+import outlines from './src/outlines'
+import overflow from './src/overflow'
+import position from './src/position'
+import rotation from './src/rotation'
+import spacing from './src/spacing'
+import skins from './src/skins'
+import tables from './src/tables'
+import textAlign from './src/text-align'
+import textDecorators from './src/text-decorators'
+import textTransform from './src/text-transform'
+import typeScale from './src/type-scale'
+import typography from './src/typography'
+import utilites from './src/utilites'
+import verticalAlign from './src/vertical-align'
+import visibility from './src/visibility'
+import whiteSpace from './src/white-space'
+import widths from './src/widths'
+import wordBreak from './src/word-break'
+import zIndex from './src/z-index'
 
-module.exports = Object.assign(
+const modules = Object.assign(
   aspectRatios,
   backgroundPosition,
   backgroundSize,
@@ -97,3 +97,22 @@ module.exports = Object.assign(
   wordBreak,
   zIndex
 )
+
+class Chain {
+  constructor(props) {
+    Object.assign(this, props)
+    Object.keys(modules).forEach(key => {
+      Object.defineProperty(this, key, {
+        enumerable: false,
+        get: () => {
+          return new Chain({
+            ...props,
+            ...modules[key],
+          })
+        }
+      })
+    })
+  }
+}
+
+export default new Chain()

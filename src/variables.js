@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   black: '#000',
   nearBlack: '#111',
   darkGray: '#333',

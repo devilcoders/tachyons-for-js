@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   b__dotted: {
     borderStyle: 'dotted'
   },

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   sans_serif: {
     fontFamily: `-apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,

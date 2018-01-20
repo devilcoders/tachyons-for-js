@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   i: {
     fontStyle: 'italic'
   },

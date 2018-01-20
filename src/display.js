@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   dn: { display: 'none' },
   di: { display: 'inline' },
   db: { display: 'block' },

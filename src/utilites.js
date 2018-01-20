@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   overflow_container: {
     overflowY: 'scroll'
   },

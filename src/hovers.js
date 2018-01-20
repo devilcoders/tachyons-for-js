@@ -19,7 +19,7 @@ const underlineHoverFocus = {
   textDecoration: 'underline'
 }
 
-module.exports = {
+export default {
   dim: {
     opacity: 1,
     transition: 'opacity .15s ease-in',

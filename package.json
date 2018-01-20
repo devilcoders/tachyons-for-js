@@ -1,8 +1,8 @@
 {
   "name": "tachyons-for-js",
-  "version": "0.0.18",
+  "version": "0.1.0",
   "description": "Tachyons for CSS-in-JS",
-  "main": "index.js",
+  "main": "dist/tachyons-for-js.js",
   "repository": "git@github.com:devilcoders/tachyons-for-js.git",
   "author": "Alexey Topolyanskiy <devilcoders@protonmail.ch>",
   "license": "MIT",
@@ -16,11 +16,23 @@
     "responsive",
     "performance"
   ],
+  "scripts": {
+    "test": "yarn build && jest",
+    "build": "rollup -c"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.1.4",
+    "rollup": "^0.54.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.0.2"
   }
 }

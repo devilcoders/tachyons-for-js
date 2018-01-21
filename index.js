@@ -11,6 +11,8 @@ import boxSizing from './src/box-sizing'
 import clears from './src/clears'
 import code from './src/code'
 import coordinates from './src/coordinates'
+import debugChildren from './src/debug-children'
+import debugGrid from './src/debug-grid'
 import display from './src/display'
 import flexbox from './src/flexbox'
 import floats from './src/floats'
@@ -26,6 +28,7 @@ import links from './src/links'
 import lists from './src/lists'
 import maxWidths from './src/max-widths'
 import negativeMargins from './src/negative-margins'
+import nested from './src/nested'
 import opacity from './src/opacity'
 import outlines from './src/outlines'
 import overflow from './src/overflow'
@@ -61,6 +64,8 @@ const modules = Object.assign(
   clears,
   code,
   coordinates,
+  debugChildren,
+  debugGrid,
   display,
   flexbox,
   floats,
@@ -76,6 +81,7 @@ const modules = Object.assign(
   lists,
   maxWidths,
   negativeMargins,
+  nested,
   opacity,
   outlines,
   overflow,
@@ -99,7 +105,7 @@ const modules = Object.assign(
 )
 
 class Chain {
-  constructor(props) {
+  constructor (props) {
     Object.assign(this, props)
     Object.keys(modules).forEach(key => {
       Object.defineProperty(this, key, {
@@ -107,7 +113,7 @@ class Chain {
         get: () => {
           return new Chain({
             ...props,
-            ...modules[key],
+            ...modules[key]
           })
         }
       })

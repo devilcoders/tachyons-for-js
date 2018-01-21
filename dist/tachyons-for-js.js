@@ -461,6 +461,42 @@ var coordinates = {
   }
 };
 
+var debugChildren = {
+  debug: {
+    '*': {
+      outline: '1px solid gold'
+    }
+  },
+  debug_white: {
+    '*': {
+      outline: '1px solid white'
+    }
+  },
+  debug_black: {
+    '*': {
+      outline: '1px solid black'
+    }
+  }
+};
+
+var debugGrid = {
+  debug_grid: {
+    background: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=) repeat top left'
+  },
+
+  debug_grid_16: {
+    background: 'transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=) repeat top left'
+  },
+
+  debug_grid_8_solid: {
+    background: 'white url(data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==) repeat top left'
+  },
+
+  debug_grid_16_solid: {
+    background: 'white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left'
+  }
+};
+
 var display = {
   dn: { display: 'none' },
   di: { display: 'inline' },
@@ -963,6 +999,75 @@ var negativeMargins = {
   },
   nt7: {
     marginTop: '-' + v.spacingExtraExtraExtraLarge
+  }
+};
+
+var nested = {
+  nested_copy_line_height: {
+    p: { lineHeight: 1.5 },
+    ul: { lineHeight: 1.5 },
+    ol: { lineHeight: 1.5 }
+  },
+
+  nested_headline_line_height: {
+    h1: { lineHeight: 1.25 },
+    h2: { lineHeight: 1.25 },
+    h3: { lineHeight: 1.25 },
+    h4: { lineHeight: 1.25 },
+    h5: { lineHeight: 1.25 },
+    h6: { lineHeight: 1.25 }
+  },
+
+  nested_list_reset: {
+    ul: {
+      paddingLeft: 0,
+      marginLeft: 0,
+      listStyleType: 'none'
+    },
+    ol: {
+      paddingLeft: 0,
+      marginLeft: 0,
+      listStyleType: 'none'
+    }
+  },
+
+  nested_copy_indent: {
+    'p+p': {
+      textIndent: '1em',
+      marginTtop: 0,
+      marginBottom: 0
+    }
+  },
+
+  nested_copy_separator: {
+    'p+p': {
+      marginTop: '1.5em'
+    }
+  },
+
+  nested_img: {
+    'img': {
+      width: '100%',
+      maxWidth: '100%',
+      display: 'block'
+    }
+  },
+
+  nested_links: {
+    a: {
+      color: v.blue,
+      transition: 'color .15s ease-in',
+
+      ':hover': {
+        color: v.light_blue,
+        transition: 'color .15s ease-in'
+      },
+
+      ':focus': {
+        color: v.light_blue,
+        transition: 'color .15s ease-in'
+      }
+    }
   }
 };
 
@@ -1897,7 +2002,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var modules = Object.assign(aspectRatios, backgroundPosition, backgroundSize, borderColors, borderRadius, borderStyle, borderWidths, borders, boxShadow, boxSizing, clears, code, coordinates, display, flexbox, floats, fontFamily, fontStyle, fontWeight, forms, heights, hovers, letterSpacing, lineHeight, links, lists, maxWidths, negativeMargins, opacity, outlines, overflow, position, rotation, spacing, skins, tables, textAlign, textDecorators, textTransform, typeScale, typography, utilites, verticalAlign, visibility, whiteSpace, widths, wordBreak, zIndex);
+var modules = Object.assign(aspectRatios, backgroundPosition, backgroundSize, borderColors, borderRadius, borderStyle, borderWidths, borders, boxShadow, boxSizing, clears, code, coordinates, debugChildren, debugGrid, display, flexbox, floats, fontFamily, fontStyle, fontWeight, forms, heights, hovers, letterSpacing, lineHeight, links, lists, maxWidths, negativeMargins, nested, opacity, outlines, overflow, position, rotation, spacing, skins, tables, textAlign, textDecorators, textTransform, typeScale, typography, utilites, verticalAlign, visibility, whiteSpace, widths, wordBreak, zIndex);
 
 var Chain = function Chain(props) {
   var _this = this;

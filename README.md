@@ -13,8 +13,8 @@ Those modules are:
 
 ## v0.3.0 Breaking API change
 
-Object properties chaining API is not replaced with functional API for speed.
-Now we export function that accepts a string of tachyons classes and
+Object properties chaining API is now replaced with functional API for speed.
+Now we export a function that accepts a string of tachyons classes and
 returns an Object with styles for those classes.
 
 ```js

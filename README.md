@@ -11,22 +11,35 @@ Those modules are:
 - `nested.css`
 - `skins-psuedo.css`
 
-## Quick Example
+## v0.3.0 Breaking API change
+
+Object properties chaining API is now replaced with functional API for speed.
+Now we export a function that accepts a string of tachyons classes and
+returns an Object with styles for those classes.
+
+```js
+...tc('ma0 pa0 ttu')
+
+/**
+ {
+   margin: 0,
+   padding: 0,
+   textTransform: 'uppercase'
+ }
+*/
+```
+
+## Quick Example (Fela.js)
 
 ```js
 import tc from 'tachyons-for-js'
+import { createComponent } from 'react-fela'
 
-const styles = () => ({
-  ...tc.ma0.pa0.ttu
+const style = () => ({
+  ...tc('ma0 pa0 ttu')
 })
 
-/*
-{
-  margin: 0,
-  padding: 0,
-  textTransform: 'uppercase'
-}
-*/
+export default createComponent(style)
 ```
 
 ## TODO

@@ -1,3 +1,5 @@
+import { split, pick, values } from 'rambda'
+
 import aspectRatios from './src/aspect-ratios'
 import backgroundPosition from './src/background-position'
 import backgroundSize from './src/background-size'
@@ -104,21 +106,24 @@ const modules = Object.assign(
   zIndex
 )
 
-class Chain {
-  constructor (props) {
-    Object.assign(this, props)
-    Object.keys(modules).forEach(key => {
-      Object.defineProperty(this, key, {
-        enumerable: false,
-        get: () => {
-          return new Chain({
-            ...props,
-            ...modules[key]
-          })
-        }
-      })
-    })
-  }
-}
+Object.freeze(modules)
 
-export default new Chain()
+export default function (classesList) {
+  const rulesArray = values(
+    pick(
+      split(' ', classesList), modules
+    )
+  )
+  const rule = {}
+
+  rulesArray.forEach(r => {
+    const keys = Object.keys(r)
+    const values = Object.values(r)
+
+    keys.forEach((k, i) => {
+      rule[k] = values[i]
+    })
+  })
+
+  return rule
+}

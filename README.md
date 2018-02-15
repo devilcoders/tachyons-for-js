@@ -21,31 +21,25 @@ returns an Object with styles for those classes.
 ...tc('ma0 pa0 ttu')
 
 /**
- * Returns
- * {
- *   margin: 0,
- *   padding: 0,
- *   textTransform: 'uppercase'
- * }
+ {
+   margin: 0,
+   padding: 0,
+   textTransform: 'uppercase'
+ }
 */
 ```
 
-## Quick Example
+## Quick Example (Fela.js)
 
 ```js
 import tc from 'tachyons-for-js'
+import { createComponent } from 'react-fela'
 
-const styles = () => ({
+const style = () => ({
   ...tc('ma0 pa0 ttu')
 })
 
-/*
-{
-  margin: 0,
-  padding: 0,
-  textTransform: 'uppercase'
-}
-*/
+export default createComponent(style)
 ```
 
 ## TODO

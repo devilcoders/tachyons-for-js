@@ -3,7 +3,7 @@ const tc = require('../dist/tachyons-for-js')
 
 test('should render one style properly', () => {
   const oneStyle = ({
-    ...tc.ma0,
+    ...tc('ma0'),
     borderRadius: '100%'
   })
 
@@ -17,7 +17,7 @@ test('should render one style properly', () => {
 
 test('should render multiple styles properly', () => {
   const fewStyles = ({
-    ...tc.ma0.pa0.ttu,
+    ...tc('ma0 pa0 ttu'),
     borderRadius: '100%'
   })
 

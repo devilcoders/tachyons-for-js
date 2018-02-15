@@ -11,13 +11,32 @@ Those modules are:
 - `nested.css`
 - `skins-psuedo.css`
 
+## v0.3.0 Breaking API change
+
+Object properties chaining API is not replaced with functional API for speed.
+Now we export function that accepts a string of tachyons classes and
+returns an Object with styles for those classes.
+
+```js
+...tc('ma0 pa0 ttu')
+
+/**
+ * Returns
+ * {
+ *   margin: 0,
+ *   padding: 0,
+ *   textTransform: 'uppercase'
+ * }
+*/
+```
+
 ## Quick Example
 
 ```js
 import tc from 'tachyons-for-js'
 
 const styles = () => ({
-  ...tc.ma0.pa0.ttu
+  ...tc('ma0 pa0 ttu')
 })
 
 /*

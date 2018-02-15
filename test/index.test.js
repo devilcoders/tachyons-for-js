@@ -15,7 +15,7 @@ test('should render one style properly', () => {
   expect(oneStyle).toEqual(expectedStyle)
 })
 
-test('should render one style properly', () => {
+test('should render multiple styles properly', () => {
   const fewStyles = ({
     ...tc.ma0.pa0.ttu,
     borderRadius: '100%'

@@ -17,6 +17,11 @@ Object properties chaining API is now replaced with functional API for speed.
 Now we export a function that accepts a string of tachyons classes and
 returns an Object with styles for those classes.
 
+Important note: we use `snake_case` instead of `kebab-case`.
+In future releases you will be able to use both cases.
+
+Like: `w_100` instead of `w-100`, `b__black` instead of `b--black`.
+
 ```js
 ...tc('ma0 pa0 ttu')
 

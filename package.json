@@ -1,6 +1,6 @@
 {
   "name": "tachyons-for-js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Tachyons for CSS-in-JS",
   "main": "dist/tachyons-for-js.js",
   "repository": "git@github.com:devilcoders/tachyons-for-js.git",

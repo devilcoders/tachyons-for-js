@@ -1,3 +1,4 @@
+// @flow
 import v from './variables'
 
 export default {

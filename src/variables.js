@@ -1,3 +1,4 @@
+// @flow
 export default {
   black: '#000',
   nearBlack: '#111',

@@ -1,3 +1,4 @@
+// @flow
 export default {
   w1: {
     width: '1rem'

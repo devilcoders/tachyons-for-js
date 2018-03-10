@@ -1,3 +1,4 @@
+// @flow
 export default {
   aspect_ratio: {
     height: 0,

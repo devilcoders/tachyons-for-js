@@ -1,3 +1,4 @@
+// @flow
 export default {
   bw0: { borderWidth: 0 },
   bw1: { borderWidth: '.125rem' },

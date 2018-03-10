@@ -1,3 +1,4 @@
+// @flow
 export default {
   fl: { float: 'left' },
   fr: { float: 'right' },

@@ -1,3 +1,4 @@
+// @flow
 export default {
   o_100: {
     opacity: 1

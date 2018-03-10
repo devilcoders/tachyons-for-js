@@ -1,3 +1,4 @@
+// @flow
 export default {
   outline: {
     outline: '1px solid'

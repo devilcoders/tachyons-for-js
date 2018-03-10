@@ -1,3 +1,4 @@
+// @flow
 export default {
   br0: { borderRadius: 0 },
   br1: { borderRadius: '.125rem' },

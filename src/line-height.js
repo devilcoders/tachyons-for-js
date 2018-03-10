@@ -1,3 +1,4 @@
+// @flow
 export default {
   lh_solid: {
     lineHeight: 1

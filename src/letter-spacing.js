@@ -1,3 +1,4 @@
+// @flow
 export default {
   tracked: {
     letterSpacing: '.1em'

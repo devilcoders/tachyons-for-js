@@ -1,3 +1,4 @@
+// @flow
 export default {
   h1: {
     height: '1rem'
@@ -20,7 +21,7 @@ export default {
   h_50: {
     height: '50%'
   },
-  'h_75': {
+  h_75: {
     height: '75%'
   },
   h_100: {

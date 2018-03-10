@@ -1,3 +1,4 @@
+// @flow
 export default {
   clip: {
     position: 'fixed !important',

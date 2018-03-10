@@ -1,3 +1,4 @@
+// @flow
 import v from './variables'
 
 export default {
@@ -44,7 +45,7 @@ export default {
   },
 
   nested_img: {
-    'img': {
+    img: {
       width: '100%',
       maxWidth: '100%',
       display: 'block'
@@ -57,12 +58,12 @@ export default {
       transition: 'color .15s ease-in',
 
       ':hover': {
-        color: v.light_blue,
+        color: v.lightBlue,
         transition: 'color .15s ease-in'
       },
 
       ':focus': {
-        color: v.light_blue,
+        color: v.lightBlue,
         transition: 'color .15s ease-in'
       }
     }

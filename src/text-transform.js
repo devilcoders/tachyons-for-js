@@ -1,3 +1,4 @@
+// @flow
 export default {
   ttc: {
     textTransform: 'capitalize'

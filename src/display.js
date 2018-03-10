@@ -1,3 +1,4 @@
+// @flow
 export default {
   dn: { display: 'none' },
   di: { display: 'inline' },

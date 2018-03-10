@@ -1,4 +1,5 @@
-import { split, pick, values } from 'rambda'
+// @flow
+import { pick, values } from 'ramda'
 
 import aspectRatios from './src/aspect-ratios'
 import backgroundPosition from './src/background-position'
@@ -52,73 +53,71 @@ import widths from './src/widths'
 import wordBreak from './src/word-break'
 import zIndex from './src/z-index'
 
-const modules = Object.assign(
-  aspectRatios,
-  backgroundPosition,
-  backgroundSize,
-  borderColors,
-  borderRadius,
-  borderStyle,
-  borderWidths,
-  borders,
-  boxShadow,
-  boxSizing,
-  clears,
-  code,
-  coordinates,
-  debugChildren,
-  debugGrid,
-  display,
-  flexbox,
-  floats,
-  fontFamily,
-  fontStyle,
-  fontWeight,
-  forms,
-  heights,
-  hovers,
-  letterSpacing,
-  lineHeight,
-  links,
-  lists,
-  maxWidths,
-  negativeMargins,
-  nested,
-  opacity,
-  outlines,
-  overflow,
-  position,
-  rotation,
-  spacing,
-  skins,
-  tables,
-  textAlign,
-  textDecorators,
-  textTransform,
-  typeScale,
-  typography,
-  utilites,
-  verticalAlign,
-  visibility,
-  whiteSpace,
-  widths,
-  wordBreak,
-  zIndex
-)
+const modules = {
+  ...aspectRatios,
+  ...backgroundPosition,
+  ...backgroundSize,
+  ...borderColors,
+  ...borderRadius,
+  ...borderStyle,
+  ...borderWidths,
+  ...borders,
+  ...boxShadow,
+  ...boxSizing,
+  ...clears,
+  ...code,
+  ...coordinates,
+  ...debugChildren,
+  ...debugGrid,
+  ...display,
+  ...flexbox,
+  ...floats,
+  ...fontFamily,
+  ...fontStyle,
+  ...fontWeight,
+  ...forms,
+  ...heights,
+  ...hovers,
+  ...letterSpacing,
+  ...lineHeight,
+  ...links,
+  ...lists,
+  ...maxWidths,
+  ...negativeMargins,
+  ...nested,
+  ...opacity,
+  ...outlines,
+  ...overflow,
+  ...position,
+  ...rotation,
+  ...spacing,
+  ...skins,
+  ...tables,
+  ...textAlign,
+  ...textDecorators,
+  ...textTransform,
+  ...typeScale,
+  ...typography,
+  ...utilites,
+  ...verticalAlign,
+  ...visibility,
+  ...whiteSpace,
+  ...widths,
+  ...wordBreak,
+  ...zIndex
+}
 
 Object.freeze(modules)
 
-export default function (classesList) {
-  const rulesArray = values(
-    pick(
-      split(' ', classesList), modules
-    )
-  )
+export default function (classesList: string): Object {
+  const classesArray /*: Array<string> */ = classesList.split(' ')
+  const selectedClasses /*: Object */ = pick(classesArray, modules)
+  const rulesArray /*: Array<Object> */ = values(selectedClasses)
   const rule = {}
 
   rulesArray.forEach(r => {
-    const keys = Object.keys(r)
-    const values = Object.values(r)
+    const keys: Array<string> = Object.keys(r)
+    const values: Array<mixed> = Object.values(r)
 
     keys.forEach((k, i) => {
       rule[k] = values[i]

@@ -1,3 +1,4 @@
+// @flow
 export default {
   strike: {
     textDecoration: 'line-through'

@@ -1,3 +1,4 @@
+// @flow
 export default {
   ws_normal: {
     whiteSpace: 'normal'

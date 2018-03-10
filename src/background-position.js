@@ -1,3 +1,4 @@
+// @flow
 export default {
   bg_center: {
     backgroundRepeat: 'no-repeat',

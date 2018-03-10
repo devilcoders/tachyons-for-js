@@ -1,3 +1,4 @@
+// @flow
 export default {
   overflow_container: {
     overflowY: 'scroll'

@@ -1,3 +1,4 @@
+// @flow
 export default {
   word_normal: {
     wordBreak: 'normal'

@@ -1,3 +1,4 @@
+// @flow
 export default {
   measure: {
     maxWidth: '30em'

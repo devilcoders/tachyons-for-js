@@ -1,3 +1,4 @@
+// @flow
 export default {
   sans_serif: {
     fontFamily: `-apple-system, BlinkMacSystemFont,

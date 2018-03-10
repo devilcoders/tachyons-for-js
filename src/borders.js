@@ -1,3 +1,4 @@
+// @flow
 export default {
   ba: { borderStyle: 'solid', borderWidth: '1px' },
   bt: { borderTopStyle: 'solid', borderTopWidth: '1px' },

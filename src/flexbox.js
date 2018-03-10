@@ -1,3 +1,4 @@
+// @flow
 export default {
   flex: { display: 'flex' },
   inline_flex: { display: 'inline-flex' },

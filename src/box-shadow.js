@@ -1,3 +1,4 @@
+// @flow
 export default {
   shadow_1: { boxShadow: '0px 0px 4px 2px rgba( 0, 0, 0, 0.2 )' },
   shadow_2: { boxShadow: '0px 0px 8px 2px rgba( 0, 0, 0, 0.2 )' },

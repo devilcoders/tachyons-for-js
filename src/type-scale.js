@@ -1,3 +1,4 @@
+// @flow
 export default {
   f_6: {
     fontSize: '6rem'

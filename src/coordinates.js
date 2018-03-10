@@ -1,3 +1,4 @@
+// @flow
 export default {
   top_0: { top: 0 },
   right_0: { right: 0 },

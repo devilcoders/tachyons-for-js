@@ -116,8 +116,8 @@ export default function (classesList: string): Object {
   const rule = {}
 
   rulesArray.forEach(r => {
-    const keys: Array<string> = Object.keys(r)
-    const values: Array<mixed> = Object.values(r)
+    const keys /*: Array<string> */ = Object.keys(r)
+    const values /*: Array<mixed> */ = Object.values(r)
 
     keys.forEach((k, i) => {
       rule[k] = values[i]

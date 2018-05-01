@@ -1,5 +1,5 @@
-// flow-typed signature: 0bfb497b3c0b55eb42ce36e313be23a2
-// flow-typed version: 973a250339/ramda_v0.x.x/flow_>=v0.62.x
+// flow-typed signature: d3449f8ea25c35ca1946ee2466812df8
+// flow-typed version: 8817b601c3/ramda_v0.x.x/flow_>=v0.62.x
 
 /* eslint-disable no-unused-vars, no-redeclare */
 
@@ -894,6 +894,9 @@ declare module ramda {
     ...rest: Array<void>
   ): (xs: T) => T;
 
+  declare function descend<A, B>(A => B): (A => A) => number
+  declare function ascend<A, B>(A => B): (A => A) => number
+
   declare function times<T>(fn: (i: number) => T, n: number): Array<T>;
   declare function times<T>(
     fn: (i: number) => T,
@@ -1708,7 +1711,7 @@ declare module ramda {
     o: O
   ): Array<[string, T]>;
 
-  declare function values<T, O: { [k: string]: T }>(o: O): Array<T>;
+  declare function values<T>(o: T): Array<$Values<T>>;
 
   declare function valuesIn<T, O: { [k: string]: T }>(o: O): Array<T | any>;
 

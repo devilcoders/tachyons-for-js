@@ -1,5 +1,5 @@
 // @flow
-import { pick, values } from 'ramda'
+import { split, pick, values, replace } from 'ramda'
 
 import aspectRatios from './src/aspect-ratios'
 import backgroundPosition from './src/background-position'
@@ -109,8 +109,9 @@ const modules = {
 
 Object.freeze(modules)
 
-export default function (classesList: string): Object {
-  const classesArray /*: Array<string> */ = classesList.split(' ')
+export default function(classesList: string): Object {
+  const processedList /*: string */ = replace(/-/g, '_', classesList)
+  const classesArray /*: Array<string> */ = split(' ', processedList)
   const selectedClasses /*: Object */ = pick(classesArray, modules)
   const rulesArray /*: Array<Object> */ = values(selectedClasses)
   const rule = {}

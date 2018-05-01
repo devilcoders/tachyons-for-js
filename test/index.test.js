@@ -15,6 +15,32 @@ test('should render one style properly', () => {
   expect(oneStyle).toEqual(expectedStyle)
 })
 
+test('should accept classes with "-"', () => {
+  const oneStyle = {
+    ...tc('lh-copy w-100')
+  }
+
+  const expectedStyle = {
+    width: '100%',
+    lineHeight: 1.5
+  }
+
+  expect(oneStyle).toEqual(expectedStyle)
+})
+
+test('should accept classes with "-" and "_"', () => {
+  const oneStyle = {
+    ...tc('lh-copy w_100')
+  }
+
+  const expectedStyle = {
+    width: '100%',
+    lineHeight: 1.5
+  }
+
+  expect(oneStyle).toEqual(expectedStyle)
+})
+
 test('should render multiple styles properly', () => {
   const fewStyles = {
     ...tc('ma0 pa0 ttu'),
